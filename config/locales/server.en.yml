@@ -1,0 +1,4 @@
+en:
+  site_settings:
+    prepend_tags_in_topic_slug_enabled: "Enable prepending tags in topic slugs"
+    prepend_tags_in_topic_slug_tag_list: "List of tags that must be prepended to the slug when used in the topic"

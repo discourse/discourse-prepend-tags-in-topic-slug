@@ -1,0 +1,9 @@
+plugins:
+  prepend_tags_in_topic_slug_enabled:
+    default: true
+    client: true
+  prepend_tags_in_topic_slug_tag_list:
+    default: ""
+    client: false
+    type: list
+    list_type: tag
