@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# name: discourse-prepend-tag-in-topic-slug
+# name: discourse-prepend-tags-in-topic-slug
 # about: A small plugin to prepend the name of some tags to the topic slugs
 # version: 0.0.1
 # authors: Discourse
