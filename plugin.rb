@@ -6,7 +6,6 @@
 # authors: Discourse
 # url: https://github.com/discourse/discourse-prepend-tags-in-topic-slug
 # required_version: 2.7.0
-# transpile_js: true
 
 enabled_site_setting :prepend_tags_in_topic_slug_enabled
 
@@ -21,8 +20,8 @@ after_initialize do
   end
 
   module DiscoursePrependTagsInTopicSlug
-    %w[
-      ../lib/discourse_prepend_tags_in_topic_slug/topic_extension.rb
-    ].each { |path| load File.expand_path(path, __FILE__) }
+    %w[../lib/discourse_prepend_tags_in_topic_slug/topic_extension.rb].each do |path|
+      load File.expand_path(path, __FILE__)
+    end
   end
 end
