@@ -15,9 +15,4 @@ module DiscoursePrependTagsInTopicSlug::TopicExtension
 
   # hook the lambda in core to change how the slugs are generated
   Topic.slug_computed_callbacks << prepend_tags_into_slug
-
-  DiscourseEvent.on(:topic_tags_changed) do |topic|
-    # added space in the end of the title will force the update of the slug
-    topic.title << " "
-  end
 end

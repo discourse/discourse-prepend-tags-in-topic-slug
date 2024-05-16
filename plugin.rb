@@ -20,8 +20,11 @@ after_initialize do
   end
 
   module DiscoursePrependTagsInTopicSlug
-    %w[../lib/discourse_prepend_tags_in_topic_slug/topic_extension.rb].each do |path|
-      load File.expand_path(path, __FILE__)
-    end
+    require_relative "lib/discourse_prepend_tags_in_topic_slug/topic_extension"
+  end
+
+  on(:topic_tags_changed) do |topic|
+    # added space in the end of the title will force the update of the slug
+    topic.title << " "
   end
 end
