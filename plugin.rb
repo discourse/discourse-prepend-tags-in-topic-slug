@@ -11,7 +11,7 @@ enabled_site_setting :prepend_tags_in_topic_slug_enabled
 
 after_initialize do
   module ::DiscoursePrependTagsInTopicSlug
-    PLUGIN_NAME ||= "discourse-prepend-tags-in-topic-slug".freeze
+    PLUGIN_NAME = "discourse-prepend-tags-in-topic-slug".freeze
 
     class Engine < ::Rails::Engine
       engine_name DiscoursePrependTagsInTopicSlug::PLUGIN_NAME
