@@ -1,4 +1,5 @@
 node_modules
 /gems
 /auto_generated
-.idea.eslintcache
+.idea
+.eslintcache
